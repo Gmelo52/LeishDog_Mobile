@@ -1,10 +1,14 @@
 import styled from "styled-components/native";
 
-export const Container = styled.View`
+export const Container = styled.SafeAreaView`
   width: 100%;
   height: 100%;
   justify-content: flex-start;
   align-items: baseline;
+`;
+export const Scroll = styled.ScrollView`
+  width: 100%;
+  height: 100%;
 `;
 
 export const Label = styled.Text`
@@ -15,7 +19,7 @@ export const Label = styled.Text`
 
 export const Input = styled.TextInput`
   width: 100%;
-  height: 10%;
+  height: 40px;
   border-width: 1px;
   border-radius: 10px;
   padding-left: 10px;
@@ -23,13 +27,13 @@ export const Input = styled.TextInput`
 `;
 export const CheckboxView = styled.View`
   width: 100%;
-  height: 10%;
-  align-items: center;
+  height: auto;
+  align-items: baseline;
   justify-content: space-between;
-  flex-direction: row;
   border-radius: 10px;
   padding-right: 15px;
   margin-bottom: 15px;
+  background-color: rgba(61,52,139,0.1);
 `;
 export const CheckboxItem = styled.View`
   flex-direction: row;

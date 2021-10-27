@@ -1,7 +1,6 @@
 import styled from "styled-components/native";
-import React from 'react';
 
-export const Container = styled.View`
+export const Container = styled.SafeAreaView`
   width: 100%;
   height: 100%;
 `;
@@ -21,4 +20,5 @@ export const Tabs = styled.View`
 `;
 
 export const Btn = styled.TouchableOpacity`
+
 `;

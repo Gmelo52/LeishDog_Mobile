@@ -6,6 +6,7 @@ export const Container = styled.SafeAreaView`
     justify-content: flex-start;
     align-items: center;
     align-self: center;
+    padding-top: 7%;
 `;
 
 export const Title = styled.Text`
@@ -19,7 +20,7 @@ export const SubTitle = styled.Text`
     font-size: 12px;
     margin-bottom: 15px;
 `;
-export const FormBox = styled.View`
+export const FormBox = styled.KeyboardAvoidingView`
     width: 100%;
     height: 80%;
 `;
@@ -33,7 +34,19 @@ export const BtnBox = styled.View`
 
 export const BtnCancelar = styled.TouchableOpacity`
     width: 48%;
-    height: 80%;
+    height: 95%;
+    background-color: red;
+    border-radius: 10px;
+    padding-right: 30px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.3);
+    margin-right: 10px;
+`;
+export const BtnVoltar = styled.TouchableOpacity`
+    width: 48%;
+    height: 95%;
     background-color: #979DAC;
     border-radius: 10px;
     padding-right: 30px;
@@ -45,7 +58,7 @@ export const BtnCancelar = styled.TouchableOpacity`
 `;
 export const BtnContinuar = styled.TouchableOpacity`
     width: 48%;
-    height: 80%;
+    height: 95%;
     background-color: #3d348b;
     border-radius: 10px;
     padding-left: 30px;

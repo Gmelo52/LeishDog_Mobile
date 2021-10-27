@@ -6,6 +6,7 @@ import {
   Input,
   Label,
   LabelCheckbox,
+  Scroll,
 } from "./styles";
 import { CheckBox } from "react-native-elements/";
 import { ScrollView } from "react-native";
@@ -15,10 +16,12 @@ export default function Form1() {
   const [checked2, setChecked2] = useState(false);
   const [checked3, setChecked3] = useState(false);
   return (
-    <Container behavior={Platform.OS === "ios" ? "position" : "height"}>
+    <Container>
+      <Scroll showsVerticalScrollIndicator={false}>
       <Label>Dado</Label>
       <Input />
       <Label>Dado</Label>
+
       <CheckboxView>
         <CheckboxItem>
           <CheckBox
@@ -55,6 +58,10 @@ export default function Form1() {
       <Input />
       <Label>Dado</Label>
       <Input />
+      <Label>Dado</Label>
+      <Input />
+
+      </Scroll>
     </Container>
   );
 }
