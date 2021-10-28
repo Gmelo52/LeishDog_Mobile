@@ -44,3 +44,13 @@ export const LabelCheckbox = styled.Text`
   color: #3d348b;
   font-size: 12px;
 `;
+export const BoxFinish = styled.View`
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+`;
+export const TextFinish = styled.Text`
+  font-size: 22px;
+  color: #3d348b;
+`;

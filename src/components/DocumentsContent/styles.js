@@ -6,6 +6,7 @@ export const Container = styled.SafeAreaView`
     justify-content: flex-start;
     align-items: center;
     align-self: center;
+    padding-top: 7%;
 `;
 
 export const Title = styled.Text`

@@ -5,6 +5,7 @@ import HomeContent from "../components/HomeContent";
 import { Icon } from "react-native-elements";
 import DocumentsContent from "../components/DocumentsContent";
 import FormContent from "../components/FormContent";
+import MapContent from "../components/MapContent";
 
 export default function Home() {
   const [content, setContent] = useState(<HomeContent />);
@@ -13,6 +14,14 @@ export default function Home() {
       <StatusBar style="auto" />
       <ViewCont>{content}</ViewCont>
       <Tabs>
+        <Btn onPress={()=>{setContent(<HomeContent/>)}}>
+          <Icon
+            name="home"
+            type="material-community"
+            color="#fff"
+            size={35}
+          />
+        </Btn>
         <Btn onPress={()=>{setContent(<DocumentsContent/>)}}>
           <Icon
             name="text-box-multiple-outline"
@@ -29,7 +38,7 @@ export default function Home() {
             size={35}
           />
         </Btn>
-        <Btn>
+        <Btn onPress={()=>setContent(<MapContent/>)}>
           <Icon
             name="map-marker-multiple"
             type="material-community"
