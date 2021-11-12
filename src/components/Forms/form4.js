@@ -17,40 +17,13 @@ export default function Form4() {
   return (
     <Container>
       <Scroll showsVerticalScrollIndicator={false}>
-     <Label>Dado</Label>
-      <Input />
-      <CheckboxView>
-        <CheckboxItem>
-          <CheckBox
-            checkedColor="#3d348b"
-            checked={checked}
-            onPress={() => {
-              setChecked(!checked);
-            }}
-          />
-          <LabelCheckbox>Opção</LabelCheckbox>
-        </CheckboxItem>
-        <CheckboxItem>
-          <CheckBox
-            checkedColor="#3d348b"
-            checked={checked2}
-            onPress={() => {
-              setChecked2(!checked2);
-            }}
-          />
-          <LabelCheckbox>Opção</LabelCheckbox>
-        </CheckboxItem>
-        <CheckboxItem>
-          <CheckBox
-            checkedColor="#3d348b"
-            checked={checked3}
-            onPress={() => {
-              setChecked3(!checked3);
-            }}
-          />
-          <LabelCheckbox>Opção</LabelCheckbox>
-        </CheckboxItem>
-      </CheckboxView>
+        <Label>Se estiver disponível, informe abaixo: histórico clínico do animal, tipo de ambiente que 
+          o animal vive (Casa, apartamento, animal comunitário, animal errante, ambiente rural, entre outros)
+          histórico de deslocamento para outros locais e/ou outras informações relevantes. {"\n"}{"\n"}Digite aqui as informações
+          complementares:
+
+        </Label>
+        <Input />
       </Scroll>
     </Container>
   );
