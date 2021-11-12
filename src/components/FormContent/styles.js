@@ -23,6 +23,7 @@ export const SubTitle = styled.Text`
 export const FormBox = styled.KeyboardAvoidingView`
     width: 100%;
     height: 78%;
+    padding-bottom: 2%;
 `;
 export const BtnBox = styled.View`
     width: 100%;
