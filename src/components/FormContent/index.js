@@ -18,6 +18,7 @@ import {
   BtnProximo,
   BtnExcel,
 } from "./styles";
+import GoExcel from '../../utils/Excel/index'
 
 export default function FormContent() {
   const [form, setForm] = useState(<Form1 />)
@@ -86,7 +87,7 @@ export default function FormContent() {
                   />
                 </BtnContinuar></> :
                 <BtnExcel onPress={() => {}}>
-                  <TextBtn>Download Excel  </TextBtn>
+                  <TextBtn onPress={()=>GoExcel()}>Download Excel  </TextBtn>
                   <Icon
                     name="microsoft-excel"
                     type="material-community"
