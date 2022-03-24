@@ -7,8 +7,7 @@ export default function HomeContent() {
     <Container>
       <Img source={require("../../assets/images/logo.png")} />
       <Text>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eros
-        massa, lacinia quis est vitae, ullamcorper congue purus.
+      Leishdog é um aplicativo de uso profissional para notificação da Leishmaniose Visceral Canina que segue, mas não substitui a Portaria Ministerial/MS nº 204/16 e a Instrução Normativa do MAPA nº 50/2013.
       </Text>
     </Container>
   );
